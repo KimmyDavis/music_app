@@ -118,7 +118,7 @@ function updateTime() {
   audio.currentTime = (100 * audio.duration * progress.value) / 100;
 }
 function endEvent() {
-  playButton.classList.remove("playing");
+  prevOrNext("next");
 }
 function parseTime(sec) {
   let mins = sec ? Math.floor(sec / 60) : 0,
